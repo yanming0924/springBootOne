@@ -29,10 +29,10 @@ public class TestConfig {
 //        return endpoint;
 //    }
 
-    @Bean
-    public ServletRegistrationBean dispatcherServlet() {
-        return new ServletRegistrationBean(new CXFServlet(), "/test/*");
-    }
+//    @Bean
+//    public ServletRegistrationBean dispatcherServlet() {
+//        return new ServletRegistrationBean(new CXFServlet(), "/test/*");
+//    }
     @Bean(name = Bus.DEFAULT_BUS_ID)
     public SpringBus springBus() {
         return new SpringBus();
